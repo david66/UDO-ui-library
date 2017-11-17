@@ -1,0 +1,53 @@
+
+@font-face {
+  font-family: 'telefonica_textregular';
+  src: url('../../fonts/telefonicatext-regular-webfont.eot');
+  src: url('../../fonts/telefonicatext-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/telefonicatext-regular-webfont.woff') format('woff'),
+  url('../../fonts/telefonicatext-regular-webfont.ttf') format('truetype'),
+  url('../../fonts/telefonicatext-regular-webfont.svg#telefonica_textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Just for less testing */
+@background_color: #FFFFEE;
+
+body {
+  background: @background_color;
+  font-family: "telefonica_textregular", Arial, sans-serif;
+  font-size: 16px;
+}
+/* --------------------- */
+
+.nav-fixed-topright {
+    -moz-box-sizing: border-box;
+    background-color: rgba(55, 63, 73, 0.9);
+    border-bottom: 1px solid rgba(55, 63, 73, 0.9);
+    border-radius: 0 0 0 3px;
+    height: 30px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.1s linear 0s;
+    width: auto;
+    z-index: 1030;
+}
+
+.nav-user-menu > li {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.nav-user-menu > li > a {
+    background: none repeat scroll 0 center transparent;
+    color: #D1D7DF;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    position: relative;
+    text-shadow: none;
+}
